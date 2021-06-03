@@ -22,31 +22,9 @@ import {
 import { ChevronDownIcon } from '@heroicons/react/solid'
 
 const solutions = [
-  {
-    name: 'Analytics',
-    description: 'Get a better understanding of where your traffic is coming from.',
-    href: '#',
-    icon: ChartBarIcon,
-  },
-  {
-    name: 'Engagement',
-    description: 'Speak directly to your customers in a more meaningful way.',
-    href: '#',
-    icon: CursorClickIcon,
-  },
-  { name: 'Security', description: "Your customers' data will be safe and secure.", href: '#', icon: ShieldCheckIcon },
-  {
-    name: 'Integrations',
-    description: "Connect with third-party tools that you're already using.",
-    href: '#',
-    icon: ViewGridIcon,
-  },
-  {
-    name: 'Automations',
-    description: 'Build strategic funnels that will drive your customers to convert',
-    href: '#',
-    icon: RefreshIcon,
-  },
+  { name: 'Managed IT Support', description: 'Our managed IT service is just like having your very own IT helpdesk onsite.', href: '#', icon: ChartBarIcon, },
+  { name: 'Cloud Services', description: 'We can offer your business the perfect Cloud Computing solutions.', href: '#', icon: CursorClickIcon, },
+  { name: 'Office 365', description: "We have partnered directly with Microsoft to provide the best suited solutions for your business.", href: '#', icon: ViewGridIcon },
 ]
 const callsToAction = [
   { name: 'Watch Demo', href: '#', icon: PlayIcon },
@@ -85,11 +63,11 @@ function classNames(...classes) {
 
 export default function Example() {
   return (
-    <Popover className="relative transparent">
+    <Popover className="relative z-50">
       {({ open }) => (
         <>
           <div className="max-w-7xl mx-auto px-4 sm:px-6">
-            <div className="flex justify-between items-center border-b-2 border-gray-100 py-6 md:justify-start md:space-x-10">
+            <div className="flex justify-between items-center py-6 md:justify-start md:space-x-10">
               <div className="flex justify-start lg:w-0 lg:flex-1">
                 <a href="/">
                   <span className="sr-only">iQuest</span>
@@ -101,7 +79,7 @@ export default function Example() {
                 </a>
               </div>
               <div className="-mr-2 -my-2 md:hidden">
-                <Popover.Button className="transparent rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-white-500 hover:bg-white-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+                <Popover.Button className="transparent bg-white rounded-md p-2 inline-flex items-center justify-center text-white-400 hover:text-white-500 hover:bg-white-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
                   <span className="sr-only">Open menu</span>
                   <MenuIcon className="h-6 w-6" aria-hidden="true" />
                 </Popover.Button>
@@ -112,14 +90,14 @@ export default function Example() {
                     <>
                       <Popover.Button
                         className={classNames(
-                          open ? 'text-white-900' : 'text-white',
-                          'group transparent rounded-md inline-flex items-center text-base font-medium hover:text-white-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500'
+                          open ? 'text-white' : 'text-white',
+                          'group transparent rounded-md inline-flex items-center text-base font-medium hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500'
                         )}
                       >
                         <span>Our Services</span>
                         <ChevronDownIcon
                           className={classNames(
-                            open ? 'text-gray-600' : 'text-white-400',
+                            open ? 'text-white-600' : 'text-white-400',
                             'ml-2 h-5 w-5 group-hover:text-white-500'
                           )}
                           aria-hidden="true"

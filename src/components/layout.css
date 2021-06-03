@@ -8,6 +8,9 @@ html {
 body {
   margin: 0;
   background-color: #1a1c2c;
+  background: url(https://dev.iquest.com.au/wp-content/uploads/2021/06/iQuest-Gradient-BG-scaled.jpg), #1a1c2c;
+  background-size: cover;
+  background-repeat: no-repeat;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: hsla(0, 0%, 0%, 0.8);
@@ -595,4 +598,8 @@ pre tt:after {
   html {
     font-size: 100%;
   }
+}
+
+.client_logo {
+  margin: 0 auto;
 }
