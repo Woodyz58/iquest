@@ -8,7 +8,7 @@ export default function managedIT() {
           <p class="text-white text-2xl leading-loose">From consulting and fully managed IT support services to business IT cloud solutions and long term IT strategies,  iQuest is the trusted IT company and technology partner behind some of Perth’s biggest companies, with a 96% client retention rate since 2004.</p>
         </div>
         <div class="absolute -top-20 -right-10 z-0">
-          <img class="rounded" src={mockup} width="580" height="725" alt="IT Mockup Image" />
+          {/* <img class="rounded" src={mockup} width="580" height="725" alt="IT Mockup Image" /> */}
         </div>
     </div>
   )

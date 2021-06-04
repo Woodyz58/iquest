@@ -7,6 +7,7 @@ html {
 }
 body {
     margin: 0;
+    overflow: hidden;
     background-color: #1a1c2c;
     background: url(../images/iQuest-Gradient.jpg), #1a1c2c;
     background-size: cover;
@@ -23,6 +24,12 @@ body {
     -webkit-font-feature-settings: "kern", "liga", "clig", "calt";
     font-feature-settings: "kern", "liga", "clig", "calt";
 }
+
+/* h1, h2, h3, h4 {
+    font-family: termina, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+} */
 
 .containerBG {
     background-color: #212050;
