@@ -66,7 +66,7 @@ export default function Example() {
     <Popover className="relative z-50">
       {({ open }) => (
         <>
-          <div className="max-w-7xl mx-auto px-4 sm:px-6">
+          <div className="max-w-6xl mx-auto px-4 sm:px-6">
             <div className="flex justify-between items-center py-6 md:justify-start md:space-x-10">
               <div className="flex justify-start lg:w-0 lg:flex-1">
                 <a href="/">
@@ -79,7 +79,7 @@ export default function Example() {
                 </a>
               </div>
               <div className="-mr-2 -my-2 md:hidden">
-                <Popover.Button className="transparent bg-white rounded-md p-2 inline-flex items-center justify-center text-white-400 hover:text-white-500 hover:bg-white-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+                <Popover.Button className="transparent bg-white rounded-md p-2 inline-flex items-center justify-center text-white-400 hover:text-white-500 hover:bg-white-100">
                   <span className="sr-only">Open menu</span>
                   <MenuIcon className="h-6 w-6" aria-hidden="true" />
                 </Popover.Button>
@@ -91,7 +91,7 @@ export default function Example() {
                       <Popover.Button
                         className={classNames(
                           open ? 'text-white' : 'text-white',
-                          'group transparent rounded-md inline-flex items-center text-base font-medium hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500'
+                          'group transparent rounded-md inline-flex items-center text-base font-medium hover:text-white'
                         )}
                       >
                         <span>Our Services</span>
@@ -167,7 +167,7 @@ export default function Example() {
                       <Popover.Button
                         className={classNames(
                           open ? 'text-white' : 'text-white',
-                          'group transparent rounded-md inline-flex items-center text-base font-medium hover:text-white-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500'
+                          'group transparent rounded-md inline-flex items-center text-base font-medium hover:text-white-900'
                         )}
                       >
                         <span>More</span>
@@ -261,7 +261,6 @@ export default function Example() {
             leaveTo="opacity-0 scale-95"
           >
             <Popover.Panel
-              focus
               static
               className="absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden"
             >
@@ -276,7 +275,7 @@ export default function Example() {
                       />
                     </div>
                     <div className="-mr-2">
-                      <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+                      <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100">
                         <span className="sr-only">Close menu</span>
                         <XIcon className="h-6 w-6" aria-hidden="true" />
                       </Popover.Button>
