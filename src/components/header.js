@@ -27,34 +27,13 @@ const solutions = [
   { name: 'Office 365', description: "We have partnered directly with Microsoft to provide the best suited solutions for your business.", href: '#', icon: ViewGridIcon },
 ]
 const callsToAction = [
-  { name: 'Watch Demo', href: '#', icon: PlayIcon },
+  { name: 'Learn More', href: '#', icon: PlayIcon },
   { name: 'Contact Sales', href: '#', icon: PhoneIcon },
 ]
 const resources = [
-  {
-    name: 'Help Center',
-    description: 'Get all of your questions answered in our forums or contact support.',
-    href: '#',
-    icon: SupportIcon,
-  },
-  {
-    name: 'Guides',
-    description: 'Learn how to maximize our platform to get the most out of it.',
-    href: '#',
-    icon: BookmarkAltIcon,
-  },
-  {
-    name: 'Events',
-    description: 'See what meet-ups and other events we might be planning near you.',
-    href: '#',
-    icon: CalendarIcon,
-  },
-  { name: 'Security', description: 'Understand how we take your privacy seriously.', href: '#', icon: ShieldCheckIcon },
-]
-const recentPosts = [
-  { id: 1, name: 'Boost your conversion rate', href: '#' },
-  { id: 2, name: 'How to use search engine optimization to drive traffic to your site', href: '#' },
-  { id: 3, name: 'Improve your customer experience', href: '#' },
+  { name: 'Cloud Services', description: 'Get all of your questions answered in our forums or contact support.', href: '#', icon: SupportIcon, },
+  { name: 'Office 365', description: 'Learn how to maximize our platform to get the most out of it.', href: '#', icon: BookmarkAltIcon, },
+  { name: 'Insights', description: 'See what meet-ups and other events we might be planning near you.', href: '#', icon: CalendarIcon,},
 ]
 
 function classNames(...classes) {
@@ -71,11 +50,7 @@ export default function Example() {
               <div className="flex justify-start lg:w-0 lg:flex-1">
                 <a href="/">
                   <span className="sr-only">iQuest</span>
-                  <img
-                    className="h-8 w-auto sm:h-10 mb-2"
-                    src="https://dev.iquest.com.au/wp-content/uploads/2017/03/iquest-white-logo.png"
-                    alt=""
-                  />
+                  <img className="h-8 w-auto sm:h-10 mb-2" src="https://dev.iquest.com.au/wp-content/uploads/2017/03/iquest-white-logo.png" width="180" height="45" alt="iQuest Logo" />
                 </a>
               </div>
               <div className="-mr-2 -my-2 md:hidden">
@@ -114,10 +89,7 @@ export default function Example() {
                         leaveFrom="opacity-100 translate-y-0"
                         leaveTo="opacity-0 translate-y-1"
                       >
-                        <Popover.Panel
-                          static
-                          className="absolute z-10 -ml-4 mt-3 transform px-2 w-screen max-w-md sm:px-0 lg:ml-0 lg:left-1/2 lg:-translate-x-1/2"
-                        >
+                        <Popover.Panel static className="absolute z-10 -ml-4 mt-3 transform px-2 w-screen max-w-md sm:px-0 lg:ml-0 lg:left-1/2 lg:-translate-x-1/2">
                           <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden">
                             <div className="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8">
                               {solutions.map((item) => (
@@ -154,12 +126,8 @@ export default function Example() {
                   )}
                 </Popover>
 
-                <a href="#" className="text-base font-medium text-white hover:text-white-900">
-                  About
-                </a>
-                <a href="#" className="text-base font-medium text-white hover:text-white-900">
-                  Case Studies
-                </a>
+                <a href="about" className="text-base font-medium text-white hover:text-white-900">About</a>
+                <a href="case-studies" className="text-base font-medium text-white hover:text-white-900">Case Studies</a>
 
                 <Popover className="relative">
                   {({ open }) => (
@@ -209,28 +177,6 @@ export default function Example() {
                                   </div>
                                 </a>
                               ))}
-                            </div>
-                            <div className="px-5 py-5 bg-gray-50 sm:px-8 sm:py-8">
-                              <div>
-                                <h3 className="text-sm tracking-wide font-medium text-gray-500 uppercase">
-                                  Recent Posts
-                                </h3>
-                                <ul className="mt-4 space-y-4">
-                                  {recentPosts.map((post) => (
-                                    <li key={post.id} className="text-base truncate">
-                                      <a href={post.href} className="font-medium text-gray-900 hover:text-gray-700">
-                                        {post.name}
-                                      </a>
-                                    </li>
-                                  ))}
-                                </ul>
-                              </div>
-                              <div className="mt-5 text-sm">
-                                <a href="#" className="font-medium text-indigo-600 hover:text-indigo-500">
-                                  {' '}
-                                  View all posts <span aria-hidden="true">&rarr;</span>
-                                </a>
-                              </div>
                             </div>
                           </div>
                         </Popover.Panel>

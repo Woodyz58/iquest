@@ -8,7 +8,7 @@ html {
 body {
     margin: 0;
     background-color: #1a1c2c;
-    /* background: url(https://dev.iquest.com.au/wp-content/uploads/2021/06/iQuest-Gradient-BG-scaled.jpg), #1a1c2c; */
+    background: url(../images/iQuest-Gradient.jpg), #1a1c2c;
     background-size: cover;
     background-repeat: no-repeat;
     -webkit-font-smoothing: antialiased;
@@ -22,6 +22,10 @@ body {
     -ms-font-feature-settings: "kern", "liga", "clig", "calt";
     -webkit-font-feature-settings: "kern", "liga", "clig", "calt";
     font-feature-settings: "kern", "liga", "clig", "calt";
+}
+
+.containerBG {
+    background-color: #212050;
 }
 
 @tailwind base;

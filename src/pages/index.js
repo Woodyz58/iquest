@@ -7,6 +7,7 @@ import Header from "../components/header"
 import Mainbanner from "../components/Homepage/mainBanner"
 import Clientlogos from "../components/Homepage/clientLogos"
 import Featuredcontent from "../components/Homepage/featuredContent"
+import ManagedIT from "../components/Homepage/managedIT"
 
 function IndexPage(props) {
   return (
@@ -19,6 +20,7 @@ function IndexPage(props) {
     <Mainbanner/>
     <Clientlogos/>
     <Featuredcontent/>
+    <ManagedIT/>
     </>
   )
 }
