@@ -1,7 +1,5 @@
 import * as React from "react"
 import { Helmet } from "react-helmet"
-import { Link } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
 
 import Header from "../components/header"
 import Mainbanner from "../components/Homepage/mainBanner"
@@ -15,6 +13,7 @@ function IndexPage(props) {
     <Helmet>
       <meta charSet="utf-8" />
       <title>iQuest | IT Support Perth | Corporate IT Services Perth | Managed IT Perth</title>
+      <meta name="description" content="Delivering exceptional corporate IT support to Perth and WA since 1999. iQuest provide IT support Perth services allowing you to focus on your business." />
     </Helmet>
     <Header/>
     <Mainbanner/>
