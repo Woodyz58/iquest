@@ -45,7 +45,7 @@ export default function ManagedIT() {
                   <div className="flex items-center space-x-3">
                     <div className="text-base font-medium text-gray-400">Elvira Mustafa</div>
                     <div className="flex-shrink-0">
-                      <img className="h-4" src={googleReviews} alt="Google Reviews" />
+                      <img src={googleReviews} width="140" height="18" alt="Google Reviews" />
                     </div>
                   </div>
                 </footer>
@@ -57,6 +57,8 @@ export default function ManagedIT() {
               <img
                 className="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:left-0 lg:h-full lg:w-auto lg:max-w-none"
                 src={mockup}
+                width="540"
+                height="675"
                 alt="iQuest Computer Mockup"
               />
             </div>

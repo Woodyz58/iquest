@@ -11,7 +11,7 @@ import Footer from "../components/footer"
 function IndexPage(props) {
   return (
     <>
-    <Helmet>
+    <Helmet htmlAttributes={{ lang: `en` }}>
       <meta charSet="utf-8" />
       <title>iQuest | IT Support Perth | Corporate IT Services Perth | Managed IT Perth</title>
       <meta name="description" content="Delivering exceptional corporate IT support to Perth and WA since 1999. iQuest provide IT support Perth services allowing you to focus on your business." />

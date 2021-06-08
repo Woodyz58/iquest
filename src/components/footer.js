@@ -60,13 +60,13 @@ const navigation = {
         <div className="max-w-6xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
           <div className="xl:grid xl:grid-cols-3 xl:gap-8">
             <div className="space-y-8 xl:col-span-1">
-              <img className="h-10" src={logoLight} alt="iQuest Logo" />
+              <img src={logoLight} width="180" height="45" alt="iQuest Logo" />
               <p className="text-gray-400 text-base">
               iQuest provide a complete suite of IT support services that allow you to focus on what's important - your business.
               </p>
               <div className="flex space-x-6">
                 {navigation.social.map((item) => (
-                  <a key={item.name} href={item.href} target="_blank" className="text-gray-400 hover:text-gray-500">
+                  <a key={item.name} href={item.href} target="_blank" rel="noopener" className="text-gray-400 hover:text-gray-500">
                     <span className="sr-only">{item.name}</span>
                     <item.icon className="h-6 w-6" aria-hidden="true" />
                   </a>
