@@ -235,8 +235,8 @@ export default function Example() {
                 </div>
                 <div className="py-6 px-5 space-y-6">
                   <div className="grid grid-cols-2 gap-y-4 gap-x-8">
-                    <a href="#" className="text-base font-medium text-gray-900 hover:text-gray-700">Pricing</a>
-                    <a href="#" className="text-base font-medium text-gray-900 hover:text-gray-700">Docs</a>
+                    <a href="#" className="text-base font-medium text-gray-900 hover:text-gray-700">Case Studies</a>
+                    <a href="#" className="text-base font-medium text-gray-900 hover:text-gray-700">About iQuest</a>
                     {resources.map((item) => (
                       <a key={item.name} href={item.href} className="text-base font-medium text-gray-900 hover:text-gray-700">{item.name}</a>
                     ))}

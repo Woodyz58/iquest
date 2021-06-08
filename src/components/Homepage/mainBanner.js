@@ -5,7 +5,6 @@ import { Link } from "gatsby"
 /* This example requires Tailwind CSS v2.0+ */
 import { Fragment } from 'react'
 import { Popover, Transition } from '@headlessui/react'
-import { MenuIcon, XIcon } from '@heroicons/react/outline'
 
 export default function Example() {
   return (
@@ -19,9 +18,8 @@ export default function Example() {
                 <span className="block xl:inline">iQuest provide</span>{' '}
                 <span className="block text-white xl:inline">exceptional IT support</span>
               </h1>
-              <p className="mt-3 text-base text-white sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
-                Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet
-                fugiat veniam occaecat fugiat aliqua.
+              <p className="mt-3 text-base leading-relaxed text-white sm:mt-5 sm:max-w-xl sm:mx-auto md:mt-5 lg:mx-0">
+              iQuest provide a complete suite of IT support services that allow you to focus on what's important - your business. Talk to us today about how we can improve business performance and productivity. We make IT simple!
               </p>
               <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
                 <div className="rounded-md shadow">

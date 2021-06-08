@@ -6,6 +6,7 @@ import Mainbanner from "../components/Homepage/mainBanner"
 import Clientlogos from "../components/Homepage/clientLogos"
 import Featuredcontent from "../components/Homepage/featuredContent"
 import ManagedIT from "../components/Homepage/managedIT"
+import Footer from "../components/footer"
 
 function IndexPage(props) {
   return (
@@ -20,6 +21,7 @@ function IndexPage(props) {
     <Clientlogos/>
     <Featuredcontent/>
     <ManagedIT/>
+    <Footer/>
     </>
   )
 }
