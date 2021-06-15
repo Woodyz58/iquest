@@ -15,21 +15,21 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
-  //   {
-  //   resolve: `gatsby-source-contentful`,
-  //   options: {
-  //     spaceId: `l607gfccuesq`,
-  //     // Learn about environment variables: https://gatsby.dev/env-vars
-  //     accessToken: process.env.ZHnwWLDCMZ3n3A4E-_wylnbkZGkS354Z7qp50JWGSdQ,
-  //   },
-  // },
-    // {
-    //   resolve: 'gatsby-source-graphcms',
-    //   options: {
-    //     endpoint: process.env.ckpgtjoub5aai01z5g51dfihu,
-    //     token: process.env.eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6ImdjbXMtbWFpbi1wcm9kdWN0aW9uIn0.eyJ2ZXJzaW9uIjozLCJpYXQiOjE2MjMxMTEwMzMsImF1ZCI6WyJodHRwczovL2FwaS1hcC1ub3J0aGVhc3QtMS5ncmFwaGNtcy5jb20vdjIvY2twZ3Rqb3ViNWFhaTAxejVnNTFkZmlodS9tYXN0ZXIiLCJodHRwczovL21hbmFnZW1lbnQtbmV4dC5ncmFwaGNtcy5jb20iXSwiaXNzIjoiaHR0cHM6Ly9tYW5hZ2VtZW50LmdyYXBoY21zLmNvbS8iLCJzdWIiOiJjMDZiMDcyYS03ZTM4LTRhNzctYTI4NC01MzEwZTNlOWZlZDEiLCJqdGkiOiJja3BuYWVoNXBnemc5MDF4c2YxOXRhdmptIn0.ufSdx74Nai8IbkwDAf4fjtEbKQpR_YmdZ0vP_CqD2L6yvyoAoKAmh414A1btedshGu7m48FMda9kKEypumm8KEboYBe6pwJqoY4uIDkyrj_8UVouE9icq1aN7ahWehLJKRB0sr92ez9uqv2_Z7HowgPU87LwbxEcyv0Kq6D_vVIlAAgqE743QaRR67aNW9Bufnh1V8hhzFrG_kVvduHFFjpM2QdyAM8hDO0xPxhaod-YIUjCJpqcLogpa0XS-SAeJILODfdWD2wpBAet-04lt8TTunJTQx25X44MIbOc6xb-Q8P5RnQ8mvxSHmpGWJpTOzPWT1E0U4pXhZjDWSw1EYsqbAWXYdvJjyZ2EmTYoCk0vXC4tGezL1pMTFkYkQmMOieAebscUwlDoEAyOauKozpTcJP30GsynHzmqctjXqjurLV71PPrlKrTV5XY0QRlwC4bEFnVcyDCf_Xr7_UooBOh7IiiOeBzX4KYJcSMAtwgXcVaellizjmSiTaN1rAoK1OW_hifuA_ctUMg0eH1farkCAi87ppe3ghc-ScAz4AkrMbYqAgs-SxxJsLEmp6Q--m90pBt1PYVLt_xMFYkZz2OsZrjEt7kDemuLKLIiuJ5Rxnqekkk7-IEyk_nxKBGRhNQjxVIrAh33XczoEXwahmtyYEZygJpZ2n5xhBLyPg,
-    //   },
-    // },
+    {
+    resolve: `gatsby-source-contentful`,
+    options: {
+      spaceId: `l607gfccuesq`,
+      accessToken: 'pGbQ-z5WaQvGcqbTaaTrcLO-JxB5yKd1EVZgjs6sXc',
+      },
+    },
+    {
+      resolve: `gatsby-source-contentful`,
+      options: {
+        spaceId: `l607gfccuesq`,
+        accessToken: `uh4qEe63LJcAucZ0_c7OGRE1uwFfH8tvXjdE-ZYUn4k`,
+        host: `preview.contentful.com`,
+      },
+    },
     // {
     //   resolve: "gatsby-plugin-web-font-loader",
     //   options: {

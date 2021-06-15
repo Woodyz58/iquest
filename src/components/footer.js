@@ -51,7 +51,7 @@ const navigation = {
     ],
   }
   
-  export default function Example() {
+  export default function Footer() {
     return (
       <footer className="" aria-labelledby="footerHeading">
         <h2 id="footerHeading" className="sr-only">
@@ -80,7 +80,7 @@ const navigation = {
                   <ul className="mt-4 space-y-4">
                     {navigation.ITsupport.map((item) => (
                       <li key={item.name}>
-                        <a href={item.href} className="text-base text-gray-400 hover:text-gray-900">
+                        <a href={item.href} className="text-base text-gray-400 hover:text-gray-200">
                           {item.name}
                         </a>
                       </li>
@@ -92,7 +92,7 @@ const navigation = {
                   <ul className="mt-4 space-y-4">
                     {navigation.about.map((item) => (
                       <li key={item.name}>
-                        <a href={item.href} className="text-base text-gray-400 hover:text-gray-900">
+                        <a href={item.href} className="text-base text-gray-400 hover:text-gray-200">
                           {item.name}
                         </a>
                       </li>
@@ -104,7 +104,7 @@ const navigation = {
                   <ul className="mt-4 space-y-4">
                     {navigation.company.map((item) => (
                       <li key={item.name}>
-                        <a href={item.href} className="text-base text-gray-400 hover:text-gray-900">
+                        <a href={item.href} className="text-base text-gray-400 hover:text-gray-200">
                           {item.name}
                         </a>
                       </li>
