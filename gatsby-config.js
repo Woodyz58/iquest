@@ -19,14 +19,14 @@ module.exports = {
     resolve: `gatsby-source-contentful`,
     options: {
       spaceId: `l607gfccuesq`,
-      accessToken: 'pGbQ-z5WaQvGcqbTaaTrcLO-JxB5yKd1EVZgjs6sXc',
+      accessToken: 'ZHnwWLDCMZ3n3A4E-_wylnbkZGkS354Z7qp50JWGSdQ',
       },
     },
     {
       resolve: `gatsby-source-contentful`,
       options: {
         spaceId: `l607gfccuesq`,
-        accessToken: `uh4qEe63LJcAucZ0_c7OGRE1uwFfH8tvXjdE-ZYUn4k`,
+        accessToken: `klEXLfNSIBeh5jdMablHxEL7mn95-Aajp4WO9DXAqeo`,
         host: `preview.contentful.com`,
       },
     },
