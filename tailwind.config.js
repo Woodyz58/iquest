@@ -1,5 +1,6 @@
 // tailwind.config.js
 const defaultTheme = require('tailwindcss/defaultTheme')
+const plugin = require('tailwindcss/plugin')
 
 module.exports = {
   theme: {
@@ -9,5 +10,9 @@ module.exports = {
       },
     },
   },
-  // ...
+  plugins: [
+    require('@tailwindcss/forms'),
+    require('@tailwindcss/typography'),
+    // ...
+  ],
 }

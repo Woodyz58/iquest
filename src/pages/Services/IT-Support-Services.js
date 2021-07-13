@@ -1,9 +1,9 @@
 import * as React from "react"
 import { Helmet } from "react-helmet"
 
-import Header from "../components/Global/header"
+import Header from "../../components/Global/header"
 
-function CaseStudies(props) {
+function ITSupportServices(props) {
   return (
     <>
     <Helmet>
@@ -15,4 +15,4 @@ function CaseStudies(props) {
   )
 }
 
-export default CaseStudies
+export default ITSupportServices

@@ -61,12 +61,12 @@ const navigation = {
           <div className="xl:grid xl:grid-cols-3 xl:gap-8">
             <div className="space-y-8 xl:col-span-1">
               <img src={logoLight} width="180" height="45" alt="iQuest Logo" />
-              <p className="text-gray-400 text-base">
+              <p className="text-white text-base">
               iQuest provide a complete suite of IT support services that allow you to focus on what's important - your business.
               </p>
               <div className="flex space-x-6">
                 {navigation.social.map((item) => (
-                  <a key={item.name} href={item.href} target="_blank" rel="noopener" className="text-gray-400 hover:text-gray-500">
+                  <a key={item.name} href={item.href} target="_blank" rel="noopener" className="text-white hover:text-gray-400">
                     <span className="sr-only">{item.name}</span>
                     <item.icon className="h-6 w-6" aria-hidden="true" />
                   </a>
@@ -80,7 +80,7 @@ const navigation = {
                   <ul className="mt-4 space-y-4">
                     {navigation.ITsupport.map((item) => (
                       <li key={item.name}>
-                        <a href={item.href} className="text-base text-gray-400 hover:text-gray-200">
+                        <a href={item.href} className="text-sm text-white hover:text-gray-400">
                           {item.name}
                         </a>
                       </li>
@@ -92,7 +92,7 @@ const navigation = {
                   <ul className="mt-4 space-y-4">
                     {navigation.about.map((item) => (
                       <li key={item.name}>
-                        <a href={item.href} className="text-base text-gray-400 hover:text-gray-200">
+                        <a href={item.href} className="text-sm text-white hover:text-gray-400">
                           {item.name}
                         </a>
                       </li>
@@ -104,7 +104,7 @@ const navigation = {
                   <ul className="mt-4 space-y-4">
                     {navigation.company.map((item) => (
                       <li key={item.name}>
-                        <a href={item.href} className="text-base text-gray-400 hover:text-gray-200">
+                        <a href={item.href} className="text-sm text-white hover:text-gray-400">
                           {item.name}
                         </a>
                       </li>
@@ -115,7 +115,7 @@ const navigation = {
             </div>
           </div>
           <div className="mt-12 border-t border-gray-200 pt-8">
-            <p className="text-base text-gray-400 xl:text-center">&copy; 2021 iQuest, Inc. All rights reserved.</p>
+            <p className="text-base text-white xl:text-center">&copy; 2021 iQuest, Inc. All rights reserved.</p>
           </div>
         </div>
       </footer>

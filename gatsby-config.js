@@ -15,21 +15,6 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
-    {
-    resolve: `gatsby-source-contentful`,
-    options: {
-      spaceId: `l607gfccuesq`,
-      accessToken: 'ZHnwWLDCMZ3n3A4E-_wylnbkZGkS354Z7qp50JWGSdQ',
-      },
-    },
-    {
-      resolve: `gatsby-source-contentful`,
-      options: {
-        spaceId: `l607gfccuesq`,
-        accessToken: `klEXLfNSIBeh5jdMablHxEL7mn95-Aajp4WO9DXAqeo`,
-        host: `preview.contentful.com`,
-      },
-    },
     // {
     //   resolve: "gatsby-plugin-web-font-loader",
     //   options: {

@@ -22,7 +22,7 @@ import {
 import { ChevronDownIcon } from '@heroicons/react/solid'
 
 const solutions = [
-  { name: 'Managed IT Support', description: 'Our managed IT service is just like having your very own IT helpdesk onsite.', href: '#', icon: ChartBarIcon, },
+  { name: 'Managed IT Support', description: 'Our managed IT service is just like having your very own IT helpdesk onsite.', href: '', icon: ChartBarIcon, },
   { name: 'Cloud Services', description: 'We can offer your business the perfect Cloud Computing solutions.', href: '#', icon: CursorClickIcon, },
   { name: 'Office 365', description: "We have partnered directly with Microsoft to provide the best suited solutions for your business.", href: '#', icon: ViewGridIcon },
 ]
