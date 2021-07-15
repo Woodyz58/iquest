@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: `iQuest | IT Services Perth`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    description: `iQuest provide a complete suite of IT support services that allow you to focus on what's important - your business.`,
+    author: `@Start Digital`,
   },
   plugins: [
     `gatsby-plugin-postcss`,
@@ -15,26 +15,26 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
-    // {
-    //   resolve: "gatsby-plugin-web-font-loader",
-    //   options: {
-    //     typekit: {
-    //       id: process.env.zgu5zvw,
-    //     },
-    //   },
-    // },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `iQuest Website`,
+        short_name: `iQuest`,
         start_url: `/`,
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
         icon: `src/images/iQuest-Favicon.png`, // This path is relative to the root of the site.
+      },
+    },
+    {
+      resolve: "gatsby-plugin-web-font-loader",
+      options: {
+        typekit: {
+          id: process.env.zgu5zvw,
+        },
       },
     },
     `gatsby-plugin-gatsby-cloud`,

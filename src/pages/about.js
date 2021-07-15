@@ -3,14 +3,9 @@ import { Helmet } from "react-helmet"
 import Header from "../components/Global/header"
 import Footer from "../components/Global/footer"
 
-import { ChevronRightIcon, HomeIcon } from '@heroicons/react/solid'
-
-
 const pages = [
   { name: 'About iQuest', href: '/', current: false },
 ]
-
-
 
 export default function About(props) {
   return (

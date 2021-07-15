@@ -61,7 +61,7 @@ const navigation = {
           <div className="xl:grid xl:grid-cols-3 xl:gap-8">
             <div className="space-y-8 xl:col-span-1">
               <img src={logoLight} width="180" height="45" alt="iQuest Logo" />
-              <p className="text-white text-base">
+              <p className="text-white text-base max-w-md">
               iQuest provide a complete suite of IT support services that allow you to focus on what's important - your business.
               </p>
               <div className="flex space-x-6">

@@ -25,11 +25,11 @@ body {
     font-feature-settings: "kern", "liga", "clig", "calt";
 }
 
-/* h1, h2, h3, h4 {
+h1, h2, h3, h4 {
     font-family: termina, sans-serif;
     font-weight: 600;
     font-style: normal;
-} */
+}
 
 .containerBG {
     background-color: #212050;

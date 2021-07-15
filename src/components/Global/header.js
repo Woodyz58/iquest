@@ -13,8 +13,6 @@ import {
   MenuIcon,
   PhoneIcon,
   PlayIcon,
-  RefreshIcon,
-  ShieldCheckIcon,
   SupportIcon,
   ViewGridIcon,
   XIcon,

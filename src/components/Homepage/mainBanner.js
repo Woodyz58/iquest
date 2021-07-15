@@ -1,12 +1,6 @@
 import * as React from "react"
-import PropTypes from "prop-types"
-import { Link } from "gatsby"
 
-/* This example requires Tailwind CSS v2.0+ */
-import { Fragment } from 'react'
-import { Popover, Transition } from '@headlessui/react'
-
-export default function Example() {
+export default function MainBanner() {
   return (
     <div className="relative transparent overflow-hidden">
       <div className="max-w-6xl mx-auto">
