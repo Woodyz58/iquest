@@ -10,7 +10,7 @@ export default function CaseStudies() {
           <div className="text-center">
             <p className="text-base font-semibold text-indigo-600 tracking-wide uppercase"></p>
             <h2 className="text-5xl font-extrabold tracking-tight text-gray-900">iQuest Case Studies</h2>
-            <p className="max-w-xl mt-5 mx-auto text-xl text-gray-500">
+            <p className="max-w-xl mt-2 mx-auto text-xl text-gray-600">
               Start building for free, then add a site plan to go live. Account plans unlock additional features.
             </p>
             <div className="mt-6"><a href="#" className="inline-flex px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700">View all case studies</a></div>

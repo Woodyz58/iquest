@@ -1,7 +1,18 @@
 import * as React from "react"
 import { Helmet } from "react-helmet"
+import PageTransition from 'gatsby-plugin-page-transitions';
 import Header from "../components/Global/header"
 import Footer from "../components/Global/footer"
+import "../styles/internal.css";
+
+// IMAGES
+import mockup from "/src/images/About-iQuest-Image.jpg"
+import FreoLogo from "/src/images/logos/Fremantle-Dockers-Logo.png"
+import GoldfieldsLogo from "/src/images/logos/Goldfields-Logo.png"
+import GiorgiLogo from "/src/images/logos/Gorgi-Logo.png"
+import GumalaLogo from "/src/images/logos/Gumala-Logo.png"
+import SingtelLogo from "/src/images/logos/Singtel-Logo.png"
+
 
 const pages = [
   { name: 'About iQuest', href: '/', current: false },
@@ -10,127 +21,68 @@ const pages = [
 export default function About(props) {
   return (
     <>
+    <PageTransition>
     <Helmet>
       <meta charSet="utf-8" />
       <title>About iQuest | IT Support Perth | Corporate IT Services Perth | Managed IT Perth</title>
     </Helmet>
     <Header/>
-    <div className="bg-gray-50 sm:max-w-6xl mx-auto rounded-lg">
-      <div className="relative overflow-hidden">
-        <div className="absolute inset-y-0 h-full w-full" aria-hidden="true">
-          <div className="relative h-full">
-            <svg
-              className="absolute right-full transform translate-y-1/3 translate-x-1/4 md:translate-y-1/2 sm:translate-x-1/2 lg:translate-x-full"
-              width={404}
-              height={784}
-              fill="none"
-              viewBox="0 0 404 784"
-            >
-              <defs>
-                <pattern
-                  id="e229dbec-10e9-49ee-8ec3-0286ca089edf"
-                  x={0}
-                  y={0}
-                  width={20}
-                  height={20}
-                  patternUnits="userSpaceOnUse"
-                >
-                  <rect x={0} y={0} width={4} height={4} className="text-gray-200" fill="currentColor" />
-                </pattern>
-              </defs>
-              <rect width={404} height={784} fill="url(#e229dbec-10e9-49ee-8ec3-0286ca089edf)" />
-            </svg>
-            <svg
-              className="absolute left-full transform -translate-y-3/4 -translate-x-1/4 sm:-translate-x-1/2 md:-translate-y-1/2 lg:-translate-x-3/4"
-              width={404}
-              height={784}
-              fill="none"
-              viewBox="0 0 404 784"
-            >
-              <defs>
-                <pattern
-                  id="d2a68204-c383-44b1-b99f-42ccff4e5365"
-                  x={0}
-                  y={0}
-                  width={20}
-                  height={20}
-                  patternUnits="userSpaceOnUse"
-                >
-                  <rect x={0} y={0} width={4} height={4} className="text-gray-200" fill="currentColor" />
-                </pattern>
-              </defs>
-              <rect width={404} height={784} fill="url(#d2a68204-c383-44b1-b99f-42ccff4e5365)" />
-            </svg>
-          </div>
-        </div>
-
-        <div className="relative pt-6 pb-16 sm:pb-24">
-          <div className="mt-16 mx-auto max-w-7xl px-4 sm:mt-24 sm:px-6">
-            <div className="text-center">
-              <h1 className="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
-                <span className="block">Data to enrich your</span>
-                <span className="block text-indigo-600">online business</span>
+    <div className="relative transparent overflow-hidden">
+      <div className="max-w-6xl mx-auto">
+        <div className="relative z-10 pb-8 flex flex-wrap items-end sm:pb-16 md:pb-20 lg:max-w-full lg:w-full lg:pb-28 xl:pb-20">
+          <main className="mt-10 max-w-2xl px-4 float-left sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-24">
+            <div className="sm:text-center lg:text-left">
+              <h1 className="text-4xl md:leading-none font-extrabold text-white sm:text-5xl md:text-6xl">
+                <span className="block lightBlue xl:inline">About iQuest</span>
               </h1>
-              <p className="mt-3 max-w-md mx-auto text-base text-gray-500 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">
-                Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet
-                fugiat veniam occaecat fugiat aliqua.
-              </p>
+              <p className="mt-3 text-lg leading-relaxed text-white sm:max-w-xl sm:mx-auto lg:mx-0">We're Perth's leading IT consulting company, ready to deploy experts anytime & anywhere.</p>
             </div>
-          </div>
-        </div>
-
-        <div className="relative h-1/6">
-          <div className="absolute inset-0 flex flex-col" aria-hidden="true">
-            <div className="flex-1" />
-            <div className="flex-1 w-full bg-transparent" />
-          </div>
-          <div className="max-w-5xl mx-auto px-4 sm:px-6">
-            <img
-              className="relative rounded-lg shadow-lg"
-              src="https://images.unsplash.com/photo-1559523182-a284c3fb7cff?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1567&q=80"
-              alt="App screenshot"
-            />
-          </div>
+          </main>
         </div>
       </div>
-      <div className="bg-transparent">
-        <div className="max-w-7xl mx-auto py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
-          <h2 className="text-center text-gray-400 text-sm font-semibold uppercase tracking-wide">
-            Trusted by over 26,000 forward-thinking companies
-          </h2>
-          <div className="mt-8 grid grid-cols-2 gap-8 md:grid-cols-6 lg:grid-cols-5">
-            <div className="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
-              <img className="h-12" src="https://tailwindui.com/img/logos/tuple-logo-gray-400.svg" alt="Tuple" />
-            </div>
-            <div className="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
-              <img className="h-12" src="https://tailwindui.com/img/logos/mirage-logo-gray-400.svg" alt="Mirage" />
-            </div>
-            <div className="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
-              <img
-                className="h-12"
-                src="https://tailwindui.com/img/logos/statickit-logo-gray-400.svg"
-                alt="StaticKit"
-              />
-            </div>
-            <div className="col-span-1 flex justify-center md:col-span-3 lg:col-span-1">
-              <img
-                className="h-12"
-                src="https://tailwindui.com/img/logos/transistor-logo-gray-400.svg"
-                alt="Transistor"
-              />
-            </div>
-            <div className="col-span-2 flex justify-center md:col-span-3 lg:col-span-1">
-              <img
-                className="h-12"
-                src="https://tailwindui.com/img/logos/workcation-logo-gray-400.svg"
-                alt="Workcation"
-              />
-            </div>
-          </div>
+    </div>
+    <div className="wave-divider"><svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none"><path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" className="shape-fill"></path></svg></div>
+    {/* <div class="wavey_divider2"><svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none"><path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path></svg></div> */}
+    <div className="relative bg-white overflow-hidden">
+      <div className="max-w-6xl mx-auto">
+        <div className="relative z-10 pt-16 pb-28 px-4 sm:px-6 lg:px-8">
+          <h2 className="text-2xl md:text-3xl md:max-w-4xl mb-3 font-extrabold leading-normal tracking-normal text-gray-900">iQuest are a dynamic and progressive company founded with a clear objective</h2>
+          <h4 className="mt-2 mb-6 text-xl text-gray-900">Local IT Services helping you access your content anywhere!</h4>
+          <p className="mt-5 text-normal leading-relaxed text-gray-600">
+            Our goal is to provide our West Australian clients with the most effective technology support and solutions for their business. We strive to be innovative and cost-effective across all areas of our work, from network installations and software deployment through to helpdesk support and cloud technology, iQuest are the leaders in Perth IT support and technology systems.
+          </p>
+          <p className="mt-5 text-normal leading-relaxed text-gray-600">
+            iQuest may be a technology company, but at the very core we provide exceptional good old-fashioned service. In a highly competitive market, we are able to distinguish ourselves by offering a personal, tailored service that delivers the very best IT solutions for each and every one of our clients. iQuest was created not only to provide professional IT services to Perth and West Australian businesses but to educate our clients on how technology can run and support businesses. Our success is measured by a high customer satisfaction rate and determined by the commitment and competence of our team of IT Engineers.
+          </p>
+          <img className="w-full mt-20 rounded-xl shadow-xl lg:w-auto" src={mockup} width="1224" height="470" alt="iQuest About Us Banner"/>
+        </div>
+      </div>
+    </div>
+    <div className="max-w-6xl mx-auto px-4 py-24 sm:px-6">
+        <div class="flex items-center space-x-5">
+        <div class="flex-1"><img className="client_logo md:px-0 px-2 mx-auto" src={SingtelLogo} width="150" height="81" alt="Singtel Logo" /></div>
+        <div class="flex-1"><img className="client_logo md:px-0 px-2 mx-auto" src={GiorgiLogo} width="150" height="81" alt="Gorgi Logo" /></div>
+        <div class="flex-1"><img className="client_logo md:px-0 px-2 mx-auto" src={FreoLogo} width="150" height="81" alt="Fremantle Dockers Logo" /></div>
+        <div class="flex-1"><img className="client_logo md:px-0 px-2 mx-auto" src={GoldfieldsLogo} width="150" height="81" alt="Goldfields Logo" /></div>
+        <div class="flex-1"><img className="client_logo md:px-0 px-2 mx-auto" src={GumalaLogo} width="150" height="81" alt="Gumala Logo" /></div>
+        </div>
+    </div>
+    <div className="relative bg-white overflow-hidden">
+      <div className="max-w-6xl mx-auto">
+        <div className="relative z-10 py-28 px-4 sm:px-6 lg:px-8">
+          <h2 className="text-2xl md:text-3xl md:max-w-4xl mb-3 font-extrabold leading-normal tracking-normal text-gray-900">iQuest are a dynamic and progressive company founded with a clear objective</h2>
+          <h4 className="mt-2 mb-6 text-xl text-gray-900">Local IT Services helping you access your content anywhere!</h4>
+          <p className="mt-5 text-normal leading-relaxed text-gray-600">
+            Our goal is to provide our West Australian clients with the most effective technology support and solutions for their business. We strive to be innovative and cost-effective across all areas of our work, from network installations and software deployment through to helpdesk support and cloud technology, iQuest are the leaders in Perth IT support and technology systems.
+          </p>
+          <p className="mt-5 text-normal leading-relaxed text-gray-600">
+            iQuest may be a technology company, but at the very core we provide exceptional good old-fashioned service. In a highly competitive market, we are able to distinguish ourselves by offering a personal, tailored service that delivers the very best IT solutions for each and every one of our clients. iQuest was created not only to provide professional IT services to Perth and West Australian businesses but to educate our clients on how technology can run and support businesses. Our success is measured by a high customer satisfaction rate and determined by the commitment and competence of our team of IT Engineers.
+          </p>
         </div>
       </div>
     </div>
     <Footer/>
+    </PageTransition>
     </>
   )
 }

@@ -20,9 +20,11 @@ import {
 import { ChevronDownIcon } from '@heroicons/react/solid'
 
 const solutions = [
-  { name: 'Managed IT Support', description: 'Our managed IT service is just like having your very own IT helpdesk onsite.', href: '', icon: ChartBarIcon, },
-  { name: 'Cloud Services', description: 'We can offer your business the perfect Cloud Computing solutions.', href: '#', icon: CursorClickIcon, },
-  { name: 'Office 365', description: "We have partnered directly with Microsoft to provide the best suited solutions for your business.", href: '#', icon: ViewGridIcon },
+  { name: 'IT Support Services', description: 'Providing fully managed IT support services in Perth & Melbourne.', href: '../IT-Support/IT-Support-Services', icon: ChartBarIcon, },
+  { name: 'Business Helpdesk Support', description: 'We have a team of resourceful technical support experts in Perth providing helpdesk support.', href: '#', icon: CursorClickIcon, },
+  { name: 'Hardware & Software Procurement', description: "iQuest can assist you with hardware & software procurement.", href: '#', icon: ViewGridIcon },
+  { name: 'Technology Consulting', description: "A range of highly experienced IT consultants only a phone call away.", href: '#', icon: ViewGridIcon },
+  { name: 'Project Management', description: "Our IT engineers are highly experienced with Project Management.", href: '#', icon: ViewGridIcon },
 ]
 const callsToAction = [
   { name: 'Learn More', href: '#', icon: PlayIcon },
@@ -38,7 +40,7 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
-export default function Example() {
+export default function Header() {
   return (
     <Popover className="relative z-50">
       {({ open }) => (
@@ -249,5 +251,6 @@ export default function Example() {
         </>
       )}
     </Popover>
+
   )
 }

@@ -9,14 +9,12 @@ body {
     margin: 0;
     overflow: hidden;
     background-color: #1a1c2c;
-    background: url(../images/iQuest-Gradient.jpg), #1a1c2c;
+    /* background: url(../images/iQuest-Gradient.jpg), #1a1c2c; */
     background-size: cover;
     background-repeat: no-repeat;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     color: hsla(0, 0%, 0%, 0.8);
-    font-family: Inter !important;
-    font-weight: normal;
     word-wrap: break-word;
     font-kerning: normal;
     -moz-font-feature-settings: "kern", "liga", "clig", "calt";
@@ -25,10 +23,30 @@ body {
     font-feature-settings: "kern", "liga", "clig", "calt";
 }
 
-h1, h2, h3, h4 {
-    font-family: termina, sans-serif;
+h1, h2, h3 {
+    font-family: termina, sans-serif !important;
     font-weight: 600;
     font-style: normal;
+}
+
+h4, h5, h6 {
+    font-family: Inter !important;
+    font-weight: 400 !important;
+    font-style: normal;
+}
+
+body p, body a {
+    font-family: Inter !important;
+    /* font-size: 18px; */
+    /* line-height: 32px; */
+}
+
+.lightBlue {
+    color: #c4dbf8 !important;
+}
+
+.darkBlue {
+    color: #90bef8 !important;
 }
 
 .containerBG {
