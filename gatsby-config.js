@@ -30,12 +30,13 @@ module.exports = {
       },
     },
     {
-      resolve: "gatsby-plugin-web-font-loader",
+      resolve: `gatsby-plugin-google-fonts`,
       options: {
-        typekit: {
-          id: 'zgu5zvw',
-        },
-      },
+        fonts: [
+          'Inter',
+        ],
+        display: 'swap'
+      }
     },
     `gatsby-plugin-gatsby-cloud`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
