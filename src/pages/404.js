@@ -1,5 +1,4 @@
 import * as React from "react"
-import Seo from "../components/seo"
 
 /* This example requires Tailwind CSS v2.0+ */
 export default function Example() {

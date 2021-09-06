@@ -19,6 +19,12 @@ import {
 } from '@heroicons/react/outline'
 import { ChevronDownIcon } from '@heroicons/react/solid'
 
+const about = [
+  { name: 'About Us', description: 'We\'re Perth\'s leading IT consulting company, ready to deploy experts anytime & anywhere.', href: '../about/', icon: ChartBarIcon, },
+  { name: 'Our Partners', description: 'At iQuest we work alongside global brands to provide the best IT services in Perth & Melbourne.', href: '../about/our-partners', icon: CursorClickIcon, },
+  { name: 'Testimonials', description: "Hear from iQuest's partners and clients.", href: '../about/testimonials', icon: ViewGridIcon },
+  { name: 'Our Directors', description: "iQuest offers Fully Managed IT Support Services where we act as your offsite IT department.", href: '../about/directors', icon: ViewGridIcon },
+]
 const solutions = [
   { name: 'IT Support Services', description: 'Providing fully managed IT support services in Perth & Melbourne.', href: '../IT-Support/IT-Support-Services', icon: ChartBarIcon, },
   { name: 'Business Helpdesk Support', description: 'We have a team of resourceful technical support experts in Perth providing helpdesk support.', href: '#', icon: CursorClickIcon, },
@@ -60,6 +66,59 @@ export default function Header() {
                 </Popover.Button>
               </div>
               <Popover.Group as="nav" className="hidden md:flex space-x-10">
+              <Popover className="relative">
+                  {({ open }) => (
+                    <>
+                      <Popover.Button
+                        className={classNames(
+                          open ? 'text-white' : 'text-white',
+                          'group transparent rounded-md inline-flex items-center text-base font-medium hover:text-white'
+                        )}
+                      >
+                        <span>About</span>
+                        <ChevronDownIcon
+                          className={classNames(
+                            open ? 'text-white-600' : 'text-white-400',
+                            'ml-2 h-5 w-5 group-hover:text-white-500'
+                          )}
+                          aria-hidden="true"
+                        />
+                      </Popover.Button>
+
+                      <Transition
+                        show={open}
+                        as={Fragment}
+                        enter="transition ease-out duration-200"
+                        enterFrom="opacity-0 translate-y-1"
+                        enterTo="opacity-100 translate-y-0"
+                        leave="transition ease-in duration-150"
+                        leaveFrom="opacity-100 translate-y-0"
+                        leaveTo="opacity-0 translate-y-1"
+                      >
+                        <Popover.Panel static className="absolute z-10 -ml-4 mt-3 transform px-2 w-screen max-w-md sm:px-0 lg:ml-0 lg:left-1/2 lg:-translate-x-1/2">
+                          <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden">
+                            <div className="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8">
+                              {about.map((item) => (
+                                <a
+                                  key={item.name}
+                                  href={item.href}
+                                  className="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50"
+                                >
+                                  <item.icon className="flex-shrink-0 h-6 w-6 text-indigo-600" aria-hidden="true" />
+                                  <div className="ml-4">
+                                    <p className="text-base font-medium text-gray-900">{item.name}</p>
+                                    <p className="mt-1 text-sm text-gray-500">{item.description}</p>
+                                  </div>
+                                </a>
+                              ))}
+                            </div>
+                          </div>
+                        </Popover.Panel>
+                      </Transition>
+                    </>
+                  )}
+                </Popover>
+
                 <Popover className="relative">
                   {({ open }) => (
                     <>
@@ -126,8 +185,7 @@ export default function Header() {
                   )}
                 </Popover>
 
-                <a href="about" className="text-base font-medium text-white hover:text-white-900">About</a>
-                <a href="case-studies" className="text-base font-medium text-white hover:text-white-900">Case Studies</a>
+                <a href="../case-studies" className="text-base font-medium text-white hover:text-white-900">Case Studies</a>
 
                 <Popover className="relative">
                   {({ open }) => (
