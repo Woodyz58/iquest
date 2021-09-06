@@ -44,8 +44,9 @@ export default function Header() {
               </div>
               <Popover.Group as="nav" className="hidden md:flex space-x-10">
                 {menuItems.map(menuItem => {
+                  const title = menuItem[0].title
                   return (
-                    <MenuPopover title={menuItem[0].title} menu={menuItem[1]} />
+                    <MenuPopover key={title} title={title} menu={menuItem[1]} />
                   )
                 })}
                 <a href="../case-studies" className="text-base font-medium text-white hover:text-white-900">Case Studies</a>
