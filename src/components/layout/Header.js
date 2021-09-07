@@ -5,11 +5,35 @@ import logoDark from "/src/images/iQuest-Perth-Logo.png"
 import menuJson from "../../../content/menu.json"
 import { Fragment } from 'react'
 import { Popover, Transition } from '@headlessui/react'
-import { MenuIcon, XIcon } from '@heroicons/react/outline'
 import MenuPopover from "../MenuPopover"
+import IconLoader from "../IconLoader"
+import {
+  BookmarkAltIcon,
+  CalendarIcon,
+  ChartBarIcon,
+  CursorClickIcon,
+  MenuIcon,
+  PhoneIcon,
+  PlayIcon,
+  SupportIcon,
+  ViewGridIcon,
+  XIcon
+} from '@heroicons/react/outline'
 
-export default function Header() {
+const Header = () => {
   const menuItems = menuJson.menuItems
+  const icons = {
+    bookmarkalticon: BookmarkAltIcon,
+    calendaricon: CalendarIcon,
+    chartbaricon: ChartBarIcon,
+    cursorclickicon: CursorClickIcon,
+    menuicon: MenuIcon,
+    phoneicon: PhoneIcon,
+    playicon: PlayIcon,
+    supporticon: SupportIcon,
+    viewgridicon: ViewGridIcon,
+    xicon: XIcon
+  }
 
   return (
     <Popover className="relative z-50">
@@ -36,12 +60,12 @@ export default function Header() {
                     <MenuPopover key={title} title={title} menu={menuItem[1]} />
                   )
                 })}
-                <a href="/case-studies" className="text-base font-medium text-white hover:text-white-900">Case Studies</a>
+                <Link to="/case-studies" className="text-base font-medium text-white hover:text-white-900">Case Studies</Link>
               </Popover.Group>
               <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
                 <Link
                   to="#"
-                  className="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700"
+                  className="btn btn-blue btn-small"
                 >
                   Contact Us
                 </Link>
@@ -77,32 +101,35 @@ export default function Header() {
                     </div>
                   </div>
                   <div className="mt-6">
-                    <nav className="grid gap-y-8">
-                      Add mobile menu items here
-                      {/* {menuItems.map((menuItem) => {
-                        const items = menuItem[1];
-                        items.map(item => {
-                          return (
-                            <Link key={item.name} href={item.href} className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50" >
-                              <item.icon className="flex-shrink-0 h-6 w-6 text-indigo-600" aria-hidden="true" />
-                              <span className="ml-3 text-base font-medium text-gray-900">{item.name}</span>
-                            </Link>
-                          )
-                        })
-                      })} */}
+                    <nav className="grid gap-y-6">
+                      {menuItems.map((item) => {
+                        const subMenuItems = item[1]
+                        return (
+                          <details>
+                            <summary>{item[0].title}</summary>
+                            <div>
+                              {subMenuItems.map(subItem => {
+                                const Icon = subItem.icon.toString().toLowerCase()
+                                return (
+                                  <Link key={subItem.name} href={subItem.href} className="p-3 flex items-center rounded-md hover:bg-gray-50" >
+                                    <IconLoader icon={icons[Icon]} classes={"flex-shrink-0 h-6 w-6 text-indigo-600"} />
+                                    <span className="ml-3 text-base font-medium text-gray-900">{subItem.name}</span>
+                                  </Link>
+                                )
+                              })}
+                            </div>
+                          </details>
+                        )
+                      })}
                     </nav>
                   </div>
                 </div>
                 <div className="py-6 px-5 space-y-6">
-                  <div className="grid grid-cols-2 gap-y-4 gap-x-8">
-                    <a href="#" className="text-base font-medium text-gray-900 hover:text-gray-700">Case Studies</a>
-                    <a href="#" className="text-base font-medium text-gray-900 hover:text-gray-700">About iQuest</a>
-                    {menuItems.map((item) => (
-                      <a key={item.name} href={item.href} className="text-base font-medium text-gray-900 hover:text-gray-700">{item.name}</a>
-                    ))}
+                  <div className="grid grid-cols-2 gap-4">
+                    <Link to="#" className="btn btn-blue btn-small">Contact Us</Link>
+                    <Link to="#" className="btn btn-white btn-small">Case Studies</Link>
                   </div>
                   <div>
-                    <a href="#" className="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700">Contact Us</a>
                   </div>
                 </div>
               </div>
@@ -115,3 +142,5 @@ export default function Header() {
 
   )
 }
+
+export default Header

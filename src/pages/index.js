@@ -3,7 +3,7 @@ import { Helmet } from "react-helmet"
 import PageTransition from 'gatsby-plugin-page-transitions';
 
 import Header from "../components/layout/Header"
-import Mainbanner from "../components/Homepage/mainBanner"
+import Mainbanner from "../components/MainBanner"
 import ClientLogos from "../components/ClientLogos"
 import Featuredcontent from "../components/FeaturedContent"
 import ManagedIT from "../components/ManagedIT"
