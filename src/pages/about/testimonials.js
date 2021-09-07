@@ -1,8 +1,8 @@
 import * as React from "react"
 import { Helmet } from "react-helmet"
 import PageTransition from 'gatsby-plugin-page-transitions';
-import Header from "../../components/Global/header"
-import Footer from "../../components/Global/footer"
+import Header from "../../components/layout/Header"
+import Footer from "../../components/layout/Footer"
 
 export default function Testimonials(props) {
   return (

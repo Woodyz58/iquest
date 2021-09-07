@@ -1,9 +1,8 @@
-import React, { useState, useEffect } from "react"
+import React from "react"
 import { Link } from "gatsby"
 import logoLight from "/src/images/iquest-white-logo.png"
 import logoDark from "/src/images/iQuest-Perth-Logo.png"
 import menuJson from "../../../content/menu.json"
-/* This example requires Tailwind CSS v2.0+ */
 import { Fragment } from 'react'
 import { Popover, Transition } from '@headlessui/react'
 import { MenuIcon, XIcon } from '@heroicons/react/outline'
