@@ -1,6 +1,6 @@
 import * as React from "react"
 
-export default function clientLogos() {
+export default function ClientLogos({ classes }) {
   const clientLogos = [
     {
       src: "https://dev.iquest.com.au/wp-content/uploads/2021/06/Singtel-Logo.png",
@@ -25,7 +25,7 @@ export default function clientLogos() {
   ]
 
   return (
-    <section className="max-w-6xl mx-auto px-4 sm:px-6">
+    <section className={`max-w-6xl mx-auto px-4 sm:px-6 ${classes}`}>
       <div className="flex items-center space-x-5">
         {clientLogos.map(logo => {
           return (

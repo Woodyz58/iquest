@@ -72,6 +72,47 @@ body p, body a {
     fill: #FFFFFF;
 }
 
+.container {
+    background: url(../images/About-Header-Background.jpg), #1a1c2c !important;
+}
+
+.wavey_divider2 {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(0deg);
+}
+
+.wavey_divider2 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+    transform: rotateY(180deg);
+}
+
+.wavey_divider2 .shape-fill {
+    fill: #FFFFFF;
+}
+
+/** For tablet devices **/
+@media (min-width: 768px) and (max-width: 1023px) {
+    .wavey_divider2 svg {
+        width: calc(100% + 1.3px);
+        height: 110px;
+    }
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+    .wavey_divider2 svg {
+        width: calc(140% + 1.3px);
+        height: 150px;
+    }
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
