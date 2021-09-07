@@ -1,57 +1,9 @@
-html {
-    -ms-text-size-adjust: 100%;
-    -webkit-text-size-adjust: 100%;
-    font: 112.5%/1.45em georgia, serif, sans-serif;
-    box-sizing: border-box;
-    overflow-y: scroll;
-}
-body {
-    margin: 0;
-    overflow: hidden;
-    background-color: #1a1c2c;
-    background: url(../images/iQuest-Gradient.jpg), #1a1c2c;
-    background-size: cover;
-    background-repeat: no-repeat;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    color: hsla(0, 0%, 0%, 0.8);
-    word-wrap: break-word;
-    font-kerning: normal;
-    -moz-font-feature-settings: "kern", "liga", "clig", "calt";
-    -ms-font-feature-settings: "kern", "liga", "clig", "calt";
-    -webkit-font-feature-settings: "kern", "liga", "clig", "calt";
-    font-feature-settings: "kern", "liga", "clig", "calt";
-}
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
 
-h1, h2, h3 {
-    font-family: termina, sans-serif !important;
-    font-weight: 600;
-    font-style: normal;
-}
-
-h4, h5, h6 {
-    font-family: Inter !important;
-    font-weight: 400 !important;
-    font-style: normal;
-}
-
-body p, body a {
-    font-family: Inter !important;
-    /* font-size: 18px; */
-    /* line-height: 32px; */
-}
-
-.lightBlue {
-    color: #c4dbf8 !important;
-}
-
-.darkBlue {
-    color: #90bef8 !important;
-}
-
-.containerBG {
-    background-color: #212050;
-}
+@import "./typography";
+@import "./layout";
 
 .wave-divider {
     bottom: 0;
@@ -72,9 +24,6 @@ body p, body a {
     fill: #FFFFFF;
 }
 
-.container {
-    background: url(../images/About-Header-Background.jpg), #1a1c2c !important;
-}
 
 .wavey_divider2 {
     bottom: 0;
@@ -112,7 +61,3 @@ body p, body a {
         height: 150px;
     }
 }
-
-@tailwind base;
-@tailwind components;
-@tailwind utilities;

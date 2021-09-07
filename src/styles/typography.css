@@ -1,0 +1,12 @@
+h1, 
+.is-h1, 
+h2, 
+.is-h2, 
+h3,
+.is-h3 {
+    @apply font-display font-semibold;
+}
+
+body {
+    @apply font-sans font-normal text-lg;
+}

@@ -1,4 +1,7 @@
 module.exports = {
+  flags: {
+    DEV_SSR: false
+  },
   siteMetadata: {
     title: `iQuest | IT Services Perth`,
     description: `iQuest provide a complete suite of IT support services that allow you to focus on what's important - your business.`,

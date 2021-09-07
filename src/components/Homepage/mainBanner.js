@@ -8,9 +8,9 @@ export default function MainBanner() {
           <main className="mt-10 max-w-3xl px-4 float-left sm:mt-12 sm:px-6 md:mt-16 lg:mt-18 lg:px-8 xl:mt-18">
             <div className="sm:text-center lg:text-left">
               <h4 className="text-md md:text-lg text-white tracking-wide mb-4">Perth's leading IT solutions team since 2004</h4>
-              <h1 className="text-4xl leading-tight font-bold sm:text-5xl md:leading-tight md:text-7xl lightBlue">iQuest provide exceptional IT support</h1>
+              <h1 className="text-4xl leading-tight font-bold sm:text-5xl md:leading-tight md:text-7xl text-blue-lighter">iQuest provide exceptional IT support</h1>
               <p className="mt-3 text-md leading-relaxed text-white sm:mt-5 sm:max-w-xl sm:mx-auto md:mt-5 lg:mx-0">
-              iQuest provide a complete suite of IT support services that allow you to focus on what's important - your business. Talk to us today about how we can improve business performance and productivity.
+                iQuest provide a complete suite of IT support services that allow you to focus on what's important - your business. Talk to us today about how we can improve business performance and productivity.
               </p>
               <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
                 <div className="rounded-md shadow">

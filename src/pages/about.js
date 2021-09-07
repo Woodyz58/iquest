@@ -7,9 +7,6 @@ import { Link } from "gatsby";
 import ClientLogos from "../components/ClientLogos"
 import { StaticImage } from "gatsby-plugin-image"
 
-// IMAGES
-import mockup from "/src/images/About-iQuest-Image.jpg"
-
 export default function About() {
   return (
     <>
@@ -25,7 +22,7 @@ export default function About() {
               <main className="mt-10 max-w-2xl px-4 float-left sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-24">
                 <div className="sm:text-center lg:text-left">
                   <h1 className="text-4xl md:leading-none font-extrabold text-white sm:text-5xl md:text-6xl">
-                    <span className="block lightBlue xl:inline">About iQuest</span>
+                    <span className="block text-blue-lighter xl:inline">About iQuest</span>
                   </h1>
                   <p className="mt-3 text-lg leading-relaxed text-white sm:max-w-xl sm:mx-auto lg:mx-0">We're Perth's leading IT consulting company, ready to deploy experts anytime & anywhere.</p>
                 </div>
@@ -45,7 +42,12 @@ export default function About() {
               <p className="mt-5 text-normal leading-relaxed text-gray-600">
                 iQuest may be a technology company, but at the very core we provide exceptional good old-fashioned service. In a highly competitive market, we are able to distinguish ourselves by offering a personal, tailored service that delivers the very best IT solutions for each and every one of our clients. iQuest was created not only to provide professional IT services to Perth and West Australian businesses but to educate our clients on how technology can run and support businesses. Our success is measured by a high customer satisfaction rate and determined by the commitment and competence of our team of IT Engineers.
               </p>
-              <img className="w-full mt-20 rounded-xl shadow-xl lg:w-auto" src={mockup} width="1224" height="470" alt="iQuest About Us Banner" />
+              <StaticImage
+                className="mt-20 rounded-xl shadow-xl lg:w-auto"
+                src="../../src/images/About-iQuest-Image.jpg"
+                width="1224"
+                alt="iQuest About Us Banner"
+                placeholder="blurred" />
             </div>
           </div>
         </div>
@@ -68,7 +70,7 @@ export default function About() {
                   src="../../src/images/holographic-bg.jpg"
                   alt="A holographic image for decorative purposes"
                   placeholder="blurred"
-                  width="1200"
+                  width={1200}
                   className="rounded-xl drop-shadow-lg h-screen max-h-80"
                 />
               </div>
