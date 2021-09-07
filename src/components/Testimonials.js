@@ -2,7 +2,7 @@ import * as React from "react"
 import clientLogo from "/src/images/Fremantle-Dockers-Client-Logo.png"
 
 /* This example requires Tailwind CSS v2.0+ */
-export default function Example() {
+export default function Testimonials() {
   return (
     <section className="py-12  overflow-hidden md:py-20 lg:py-24">
       <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
