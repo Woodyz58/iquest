@@ -1,5 +1,5 @@
 .btn {
-    @apply w-full flex items-center justify-center px-8 py-3 text-base font-medium rounded-md md:text-lg;
+    @apply inline-flex self-start items-center justify-center px-8 py-3 text-base font-medium rounded-md md:text-lg;
 
     &-blue {
         @apply text-white bg-indigo-600 hover:bg-indigo-700;

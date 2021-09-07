@@ -76,7 +76,7 @@ export default function About() {
               </div>
               <p>We give you the right solutions because your business needs them, not because it’s a ‘one size fits all’ template. And we look at each individual business to create solutions that are right for you.</p>
               <p>I can say, along with the other Directors, that we are so proud of the business iQuest has become in this day. Likewise we are also proud of the fantastic team of experienced and passionate IT professionals who work hard with us at providing exceptional service.  We hope you will give us the opportunity to work with you too.</p>
-              <Link className="btn mt-12" to="#">Get In Touch</Link>
+              <Link className="btn btn-blue mt-12" to="#">Get In Touch</Link>
             </div>
           </div>
         </div>
