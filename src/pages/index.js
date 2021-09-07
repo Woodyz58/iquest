@@ -5,11 +5,11 @@ import PageTransition from 'gatsby-plugin-page-transitions';
 import Header from "../components/layout/Header"
 import Mainbanner from "../components/Homepage/mainBanner"
 import ClientLogos from "../components/ClientLogos"
-import Featuredcontent from "../components/Homepage/featuredContent"
-import ManagedIT from "../components/Homepage/managedIT"
-import CaseStudies from "../components/Homepage/caseStudies"
-import Testimonials from "../components/Homepage/testimonials"
-import CloudComputing from "../components/Homepage/cloudComputing"
+import Featuredcontent from "../components/FeaturedContent"
+import ManagedIT from "../components/ManagedIT"
+import CaseStudies from "../components/CaseStudies"
+import Testimonials from "../components/Testimonials"
+import CloudComputing from "../components/CloudComputing"
 import Footer from "../components/layout/Footer"
 
 function IndexPage(props) {
