@@ -4,15 +4,6 @@ import PageTransition from 'gatsby-plugin-page-transitions';
 import Header from "../../components/Global/header"
 import Footer from "../../components/Global/footer"
 
-// IMAGES
-import mockup from "/src/images/About-iQuest-Image.jpg"
-import FreoLogo from "/src/images/logos/Fremantle-Dockers-Logo.png"
-import GoldfieldsLogo from "/src/images/logos/Goldfields-Logo.png"
-import GiorgiLogo from "/src/images/logos/Gorgi-Logo.png"
-import GumalaLogo from "/src/images/logos/Gumala-Logo.png"
-import SingtelLogo from "/src/images/logos/Singtel-Logo.png"
-
-
 export default function Testimonials(props) {
   return (
     <>
