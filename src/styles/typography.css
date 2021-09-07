@@ -4,9 +4,17 @@ h2,
 .is-h2, 
 h3,
 .is-h3 {
-    @apply font-display font-semibold;
+    @apply font-display font-semibold mb-6;
+}
+
+h2, .is-h2 {
+    @apply text-2xl md:text-3xl font-extrabold;
+}
+
+h4, .is-h4 {
+    @apply text-xl mb-4;
 }
 
 body {
-    @apply font-sans font-normal text-lg;
+    @apply font-sans font-normal text-lg leading-relaxed;
 }

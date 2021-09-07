@@ -34,12 +34,12 @@ export default function About() {
         <div className="relative bg-white overflow-hidden">
           <div className="max-w-6xl mx-auto">
             <div className="relative z-10 pt-16 pb-28 px-4 sm:px-6 lg:px-8">
-              <h2 className="text-2xl md:text-3xl md:max-w-4xl mb-3 font-extrabold leading-normal tracking-normal text-gray-900">iQuest are a dynamic and progressive company founded with a clear objective</h2>
-              <h4 className="mt-2 mb-6 text-xl text-gray-900">Local IT Services helping you access your content anywhere!</h4>
-              <p className="mt-5 text-normal leading-relaxed text-gray-600">
+              <h2 className="md:max-w-4xl mb-3 text-gray-900">iQuest are a dynamic and progressive company founded with a clear objective</h2>
+              <h4 className="text-gray-900">Local IT Services helping you access your content anywhere!</h4>
+              <p className="mt-5 text-normal">
                 Our goal is to provide our West Australian clients with the most effective technology support and solutions for their business. We strive to be innovative and cost-effective across all areas of our work, from network installations and software deployment through to helpdesk support and cloud technology, iQuest are the leaders in Perth IT support and technology systems.
               </p>
-              <p className="mt-5 text-normal leading-relaxed text-gray-600">
+              <p className="mt-5 text-normal">
                 iQuest may be a technology company, but at the very core we provide exceptional good old-fashioned service. In a highly competitive market, we are able to distinguish ourselves by offering a personal, tailored service that delivers the very best IT solutions for each and every one of our clients. iQuest was created not only to provide professional IT services to Perth and West Australian businesses but to educate our clients on how technology can run and support businesses. Our success is measured by a high customer satisfaction rate and determined by the commitment and competence of our team of IT Engineers.
               </p>
               <StaticImage
@@ -54,9 +54,9 @@ export default function About() {
         <ClientLogos classes="py-16" />
         <div className="relative bg-white overflow-hidden">
           <div className="max-w-6xl mx-auto">
-            <div className="relative z-10 py-28 leading-relaxed text-gray-600 px-4 sm:px-6 lg:px-8 flex flex-col space-y-6">
-              <h2 className="text-2xl md:text-3xl md:max-w-4xl font-extrabold leading-normal tracking-normal text-gray-900">The iQuest Team</h2>
-              <p className="text-xl text-gray-900">A message from the directors</p>
+            <div className="relative z-10 py-28 px-4 sm:px-6 lg:px-8 flex flex-col space-y-6">
+              <h2 className="text-gray-900 mb-0">The iQuest Team</h2>
+              <p className="text-xl font-bold text-gray-900">A message from the directors</p>
               <p>
                 In this fast paced world where everything beeps, blinks and connects, Information Technology (IT) is one of those industries which every single business relies so heavily upon yet, most people don’t understand it. It is the way we connect, operate, and build systems. The ‘ignorance is bliss’ approach can be tempting until systems break down and you are at risk of losing everything. Is this something you have experienced in the past? We come across so many who have.
               </p>
@@ -76,7 +76,7 @@ export default function About() {
               </div>
               <p>We give you the right solutions because your business needs them, not because it’s a ‘one size fits all’ template. And we look at each individual business to create solutions that are right for you.</p>
               <p>I can say, along with the other Directors, that we are so proud of the business iQuest has become in this day. Likewise we are also proud of the fantastic team of experienced and passionate IT professionals who work hard with us at providing exceptional service.  We hope you will give us the opportunity to work with you too.</p>
-              <Link className="btn" to="#">Get In Touch</Link>
+              <Link className="btn mt-12" to="#">Get In Touch</Link>
             </div>
           </div>
         </div>
