@@ -5,7 +5,7 @@ import PageTransition from 'gatsby-plugin-page-transitions';
 import Header from "../../components/layout/Header"
 import Footer from "../../components/layout/Footer"
 
-function TechConsulting(props) {
+function TechnologyConsultingPerth(props) {
   return (
     <>
       <PageTransition>
@@ -20,4 +20,4 @@ function TechConsulting(props) {
   )
 }
 
-export default TechConsulting
+export default TechnologyConsultingPerth
