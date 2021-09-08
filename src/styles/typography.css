@@ -22,3 +22,7 @@ h4, .is-h4 {
 body {
     @apply font-sans font-normal text-lg leading-relaxed;
 }
+
+p + p {
+    @apply mt-6;
+}
