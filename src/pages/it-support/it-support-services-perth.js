@@ -2,8 +2,7 @@ import * as React from "react"
 import PageTransition from 'gatsby-plugin-page-transitions';
 import InternalLayout from "../../components/layout/InternalLayout"
 import TwoColumnGrid from "../../components/TwoColumnGrid"
-
-import { CheckIcon } from '@heroicons/react/outline'
+import List from "../../components/List"
 
 function ITSupportServicesPerth() {
   const reasons = [
@@ -53,18 +52,7 @@ function ITSupportServicesPerth() {
                 iQuest IT Support Perth ‘ provide fully managed IT Support Services and we take pride in being the offsite IT department for some of Perth’s most recognised businesses. Our mission is to remove issues before they occur, ensuring that our clients maximize their productivity. Our approach to IT support is customer focused and unique to Western Australia. By focusing on each of our clients needs we’re able to align technology with the overall goals of the business, in turn, improving productivity and reducing risk.
               </p>
             </div>
-            <div className="mt-12 lg:mt-0">
-              <dl className="space-y-4">
-                {reasons.map((reason) => (
-                  <div key={reason} className="relative">
-                    <dt>
-                      <CheckIcon className="absolute h-6 w-6 text-green-500" aria-hidden="true" />
-                      <p className="ml-9 text-lg leading-6 font-medium text-gray-900">{reason}</p>
-                    </dt>
-                  </div>
-                ))}
-              </dl>
-            </div>
+            <List items={reasons} icon="CheckIcon" />
           </div>
           <TwoColumnGrid title="Why use iQuest?" items={items} />
         </InternalLayout>
