@@ -64,7 +64,7 @@ const Header = () => {
               </Popover.Group>
               <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
                 <Link
-                  to="#"
+                  to="/contact-us"
                   className="btn btn-blue btn-small"
                 >
                   Contact Us
@@ -126,8 +126,8 @@ const Header = () => {
                 </div>
                 <div className="py-6 px-5 space-y-6">
                   <div className="grid grid-cols-2 gap-4">
-                    <Link to="#" className="btn btn-blue btn-small">Contact Us</Link>
-                    <Link to="#" className="btn btn-white btn-small">Case Studies</Link>
+                    <Link to="/contact-us" className="btn btn-blue btn-small">Contact Us</Link>
+                    <Link to="/case-studies" className="btn btn-white btn-small">Case Studies</Link>
                   </div>
                   <div>
                   </div>
