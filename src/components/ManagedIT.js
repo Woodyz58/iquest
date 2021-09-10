@@ -10,7 +10,7 @@ export default function ManagedIT() {
         <div className="lg:mx-auto lg:max-w-6xl lg:px-8 lg:grid lg:grid-cols-2 lg:grid-flow-col-dense lg:gap-24">
           <div className="px-4 max-w-6xl mx-auto sm:px-6 lg:py-16 lg:max-w-none lg:mx-0 lg:px-0">
             <div className="text-white flex flex-col space-y-6">
-              <h2 class="mb-0">Fully managed IT services</h2>
+              <h2 className="mb-0">Fully managed IT services</h2>
               <p>
                 From consulting and fully managed IT support services to business IT cloud solutions and long term IT strategies,  iQuest is the trusted IT company and technology partner behind some of Perth’s biggest companies, with a 96% client retention rate since 2004.
               </p>

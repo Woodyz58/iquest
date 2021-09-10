@@ -52,12 +52,12 @@ export default function Partners(props) {
           </div>
         </div>
         <div className="max-w-6xl mx-auto px-4 py-24 sm:px-6">
-          <div class="flex items-center space-x-5">
-            <div class="flex-1"><img className="client_logo md:px-0 px-2 mx-auto" src={SingtelLogo} width="150" height="81" alt="Singtel Logo" /></div>
-            <div class="flex-1"><img className="client_logo md:px-0 px-2 mx-auto" src={GiorgiLogo} width="150" height="81" alt="Gorgi Logo" /></div>
-            <div class="flex-1"><img className="client_logo md:px-0 px-2 mx-auto" src={FreoLogo} width="150" height="81" alt="Fremantle Dockers Logo" /></div>
-            <div class="flex-1"><img className="client_logo md:px-0 px-2 mx-auto" src={GoldfieldsLogo} width="150" height="81" alt="Goldfields Logo" /></div>
-            <div class="flex-1"><img className="client_logo md:px-0 px-2 mx-auto" src={GumalaLogo} width="150" height="81" alt="Gumala Logo" /></div>
+          <div className="flex items-center space-x-5">
+            <div className="flex-1"><img className="client_logo md:px-0 px-2 mx-auto" src={SingtelLogo} width="150" height="81" alt="Singtel Logo" /></div>
+            <div className="flex-1"><img className="client_logo md:px-0 px-2 mx-auto" src={GiorgiLogo} width="150" height="81" alt="Gorgi Logo" /></div>
+            <div className="flex-1"><img className="client_logo md:px-0 px-2 mx-auto" src={FreoLogo} width="150" height="81" alt="Fremantle Dockers Logo" /></div>
+            <div className="flex-1"><img className="client_logo md:px-0 px-2 mx-auto" src={GoldfieldsLogo} width="150" height="81" alt="Goldfields Logo" /></div>
+            <div className="flex-1"><img className="client_logo md:px-0 px-2 mx-auto" src={GumalaLogo} width="150" height="81" alt="Gumala Logo" /></div>
           </div>
         </div>
         <Footer />

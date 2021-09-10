@@ -9,7 +9,7 @@ function BusinessHelpdeskSupportPerth() {
     <>
       <PageTransition>
         <InternalLayout title="Business Helpdesk Support" >
-          <div class="flex flex-col space-y-6">
+          <div className="flex flex-col space-y-6">
             <div className="grid lg:grid-cols-2 gap-6 items-center">
               <div>
                 <h2>We have a team of resourceful technical support experts in Perth providing helpdesk support.</h2>

@@ -14,6 +14,9 @@ import {
     SupportIcon,
     ViewGridIcon,
     XIcon,
+    WifiIcon,
+    DocumentTextIcon,
+    ChatIcon
 } from '@heroicons/react/outline'
 
 const MenuPopover = ({ title, menu }) => {
@@ -27,7 +30,10 @@ const MenuPopover = ({ title, menu }) => {
         playicon: PlayIcon,
         supporticon: SupportIcon,
         viewgridicon: ViewGridIcon,
-        xicon: XIcon
+        xicon: XIcon,
+        wifiicon: WifiIcon,
+        documenttexticon: DocumentTextIcon,
+        chaticon: ChatIcon
     }
 
     return (

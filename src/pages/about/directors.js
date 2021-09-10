@@ -12,7 +12,7 @@ export default function Directors() {
             <div className="flex flex-col space-y-6">
               <h2 className="mb-0">
                 Anderson Chong<br />
-                <span className="uppercase text-base tracking-wide text-blue-dark font-bold">Managing Director</span>
+                <span className="uppercase text-base tracking-wide text-indigo-600 font-bold">Managing Director</span>
               </h2>
               <p>
                 Our partnerships with these companies are advantageous for our clients as it’s through our relationships that we can offer better pricing and service. Our close relationships with our partners also means we can build upon our knowledge and seek answers quickly on issues of hardware and software.

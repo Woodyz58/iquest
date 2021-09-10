@@ -21,7 +21,7 @@ function HardwareSoftwareProcurement() {
     <>
       <PageTransition>
         <InternalLayout title="Hardware & Software Procurement" >
-          <div class="flex flex-col space-y-16">
+          <div className="flex flex-col space-y-16">
             <div className="grid lg:grid-cols-2 gap-6 items-center">
               <div>
                 <h2>iQuest can assist you with hardware & software procurement.</h2>

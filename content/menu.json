@@ -21,7 +21,7 @@
                     "name": "Testimonials",
                     "description": "Hear from iQuest's partners and clients.",
                     "href": "/about/testimonials",
-                    "icon": "ViewGridIcon"
+                    "icon": "ChatIcon"
                 },
                 {
                     "name": "Our Directors",
@@ -58,13 +58,13 @@
                     "name": "Technology Consulting",
                     "description": "A range of highly experienced IT consultants only a phone call away.",
                     "href": "/it-support/technology-consulting-perth",
-                    "icon": "ViewGridIcon"
+                    "icon": "WifiIcon"
                 },
                 {
                     "name": "Project Management",
                     "description": "Our IT engineers are highly experienced with Project Management.",
-                    "href": "#",
-                    "icon": "ViewGridIcon"
+                    "href": "/it-support/it-project-management-perth",
+                    "icon": "DocumentTextIcon"
                 }
             ]
         ],
