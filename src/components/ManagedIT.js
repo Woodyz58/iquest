@@ -37,8 +37,8 @@ export default function ManagedIT() {
           <div className="mt-12 sm:mt-16 lg:mt-0">
             <div className="px-4 sm:pl-6 lg:px-0 lg:m-0 lg:relative lg:h-full">
               <StaticImage
-                imgClassName="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:left-0 lg:h-full lg:w-auto lg:max-w-none"
-                src="../../images/iQuest-IT-Mockup.jpg"
+                className="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:left-0 lg:h-full lg:w-auto lg:max-w-none"
+                src="../images/iQuest-IT-Mockup.jpg"
                 alt="iQuest Computer Mockup"
                 placeholder="dominantColor"
                 layout="constrained"
